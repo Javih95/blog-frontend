@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './css/postList.css';
+import './css/postlist.css';
 import type { PostType } from '../types/Post';
 
 
