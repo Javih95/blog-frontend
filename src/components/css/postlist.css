@@ -1,0 +1,89 @@
+.post-list {
+  height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Título sección */
+.post-list h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 24px;
+}
+
+.post-list h2::before {
+  content: "⚡";
+  margin-right: 8px;
+}
+
+/* Grid */
+.post-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjeta de post */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  border-color: #38bdf8;
+}
+
+/* Imagen de portada */
+.post-card img.post-cover {
+  width: 96px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Título del post */
+.post-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* Descripción / Fecha */
+.post-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Autor y meta */
+.post-card small {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .post-list {
+    padding: 20px;
+  }
+
+  .post-card img.post-cover {
+    height: 160px;
+  }
+}

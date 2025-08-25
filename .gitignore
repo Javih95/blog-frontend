@@ -1,0 +1,29 @@
+# Ignorar node_modules en ambos proyectos
+blog-backend/node_modules/
+blog-frontend/node_modules/
+
+# Ignorar archivos de logs
+blog-backend/*.log
+blog-frontend/*.log
+
+# Ignorar carpetas de build/output
+blog-backend/dist/
+blog-backend/build/
+blog-frontend/dist/
+blog-frontend/build/
+
+# Ignorar archivos de entorno sensibles
+blog-backend/.env
+blog-frontend/.env
+
+# Ignorar carpetas de sistema comunes
+*.DS_Store
+Thumbs.db
+
+# Ignorar nodemon config y pm2 logs si usas
+blog-backend/nodemon.json
+blog-backend/pidfile*
+
+# Ignorar archivos de lock si querés (opcional)
+# package-lock.json
+# yarn.lock

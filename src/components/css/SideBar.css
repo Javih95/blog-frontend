@@ -1,0 +1,49 @@
+.sidebar {
+  padding: 20px;
+  min-width: 260px;
+  max-width: 300px;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Título sidebar */
+.sidebar h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar h3::before {
+  content: "⭐";
+  font-size: 1rem;
+}
+
+/* Post destacado */
+.sidebar-post {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Links dentro de la sidebar */
+.sidebar-post a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f1f5f9;
+  transition: color 0.2s ease;
+}
+
+.sidebar-post a:hover {
+  color: #38bdf8;
+}

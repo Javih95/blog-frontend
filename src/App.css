@@ -1,0 +1,50 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f5f5f5;
+}
+
+/* Layout principal con Grid */
+.app-layout {
+  display: grid;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  grid-template-columns: 4fr 1.2fr; /* proporción entre main y sidebar */
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding:0 16px;
+  gap: 20px; /* espacio entre áreas */
+}
+
+/* Header */
+.header {
+  grid-area: header;
+}
+
+/* Contenido principal */
+.main-content {
+  grid-area: main;
+}
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+}
+/* Footer */
+.footer {
+  grid-area: footer;
+}
+
+/* Tipografías y colores */
+h1, h2, h3, p, small {
+  background-color: transparent;
+}
+
+h2 {
+  color: #00bcd4;
+}
+
